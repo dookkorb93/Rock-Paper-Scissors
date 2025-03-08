@@ -1,13 +1,15 @@
-function getComputerChoice(textString) {
-    const string = ["Rock", "Paper", "Scissors"];
+function getComputerChoice() {
     const randomString = Math.floor(Math.random() * string.length);
-    return textString[randomString]
-}
+    const value = string[randomString];
+    return value;
+};
 
-const randomWord = getComputerChoice(myString);
+const string = ["Rock", "Paper", "Scissors"];
+const value = getComputerChoice(string);
+console.log(value);
 
 function getHumanChoice() {
-    const humanChoice = prompt("Rock, Paper, or Scissors?");
+    let humanChoice = prompt("Rock, Paper, or Scissors?");
     const answer = humanChoice;
     switch(answer) {
         case "Rock":
@@ -23,6 +25,4 @@ function getHumanChoice() {
             console.log("Please enter a valid value");
     }
     return answer;
-}
-
-console.log(randomWord);
+};
