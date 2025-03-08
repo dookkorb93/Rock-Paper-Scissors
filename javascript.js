@@ -6,23 +6,28 @@ function getComputerChoice() {
 
 const string = ["Rock", "Paper", "Scissors"];
 const value = getComputerChoice(string);
-console.log(value);
 
 function getHumanChoice() {
-    let humanChoice = prompt("Rock, Paper, or Scissors?");
-    const answer = humanChoice;
-    switch(answer) {
+    const humanChoice = prompt("Rock, Paper, or Scissors?");
+    switch(humanChoice) {
         case "Rock":
             console.log("Rock");
             break;
+
         case "Paper":
             console.log("Paper");
             break;
+
         case "Scissors":
             console.log("Scissors");
             break;
+
         default:
             console.log("Please enter a valid value");
     }
-    return answer;
+    return humanChoice;
 };
+
+let humanScore = getHumanChoice(0);
+let computerScore = getComputerChoice(0);
+
