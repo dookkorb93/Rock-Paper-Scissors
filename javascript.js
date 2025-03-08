@@ -4,3 +4,7 @@ function getComputerChoice(textString) {
 }
 const myString = ["Rock", "Paper", "Scissors"];
 const randomWord = getComputerChoice(myString);
+
+function getHumanChoice() {
+    
+}
