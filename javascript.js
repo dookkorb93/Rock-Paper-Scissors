@@ -1,12 +1,14 @@
 function getComputerChoice(textString) {
-    const randomString = Math.floor(Math.random() * textString.length);
+    const string = ["Rock", "Paper", "Scissors"];
+    const randomString = Math.floor(Math.random() * string.length);
     return textString[randomString]
 }
-const myString = ["Rock", "Paper", "Scissors"];
+
 const randomWord = getComputerChoice(myString);
 
-let choice = prompt("Rock, Paper, or Scissors?");
+//let choice = prompt("Rock, Paper, or Scissors?");
 function getHumanChoice() {
     return randomWord;
 }
 
+console.log(randomWord);
