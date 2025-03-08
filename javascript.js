@@ -5,6 +5,8 @@ function getComputerChoice(textString) {
 const myString = ["Rock", "Paper", "Scissors"];
 const randomWord = getComputerChoice(myString);
 
+let choice = prompt("Rock, Paper, or Scissors?");
 function getHumanChoice() {
-    
+    return randomWord;
 }
+
