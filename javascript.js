@@ -3,3 +3,5 @@ function getComputerChoice(textString) {
     return textString [randomString]
 }
 
+const myString = ("Rock", "Paper", "Scissors");
+const randomWord = getComputerChoice[myString];
