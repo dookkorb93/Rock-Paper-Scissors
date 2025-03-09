@@ -33,7 +33,7 @@ function getHumanChoice() {
 let humanScore = getHumanChoice(init=0);
 let computerScore = getComputerChoice(init=0);
 
-//Make these two parameters arguments
+//Make below two parameters arguments
 //Make humanChoice paramater case-insensitive
 
 function playRound(humanChoice, computerChoice) {
