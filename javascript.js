@@ -8,8 +8,8 @@ const string = ["Rock", "Paper", "Scissors"];
 const value = getComputerChoice(string);
 
 function getHumanChoice() {
-    const humanChoice = prompt("Rock, Paper, or Scissors?");
-    switch(humanChoice) {
+    const humanPrompt = prompt("Rock, Paper, or Scissors?");
+    switch(humanPrompt) {
         case "Rock":
             console.log("Rock");
             break;
@@ -25,14 +25,14 @@ function getHumanChoice() {
         default:
             console.log("Please enter a valid value");
     }
-    return humanChoice;
+    return humanPrompt;
 };
 
 let humanScore = getHumanChoice(0);
 let computerScore = getComputerChoice(0);
 
 function playRound(humanChoice, computerChoice) {
-    
+
 }
 
 const humanSelection = getHumanChoice();
