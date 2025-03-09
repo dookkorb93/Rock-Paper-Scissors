@@ -7,6 +7,8 @@ function getComputerChoice() {
 const string = ["Rock", "Paper", "Scissors"];
 const value = getComputerChoice(string);
 
+//Double check the global variables in the global scope are compatible with function below
+
 function getHumanChoice() {
     const humanPrompt = prompt("Rock, Paper, or Scissors?");
     switch(humanPrompt) {
@@ -34,7 +36,7 @@ let computerScore = getComputerChoice(0);
 function playRound(humanChoice, computerChoice) {
     //Make these two parameters arguments
     //Make humanChoice paramater case-insensitive
-    
+
 }
 
 const humanSelection = getHumanChoice();
