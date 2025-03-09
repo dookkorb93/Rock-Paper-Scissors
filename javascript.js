@@ -33,9 +33,10 @@ function getHumanChoice() {
 let humanScore = getHumanChoice(init=0);
 let computerScore = getComputerChoice(init=0);
 
+//Make these two parameters arguments
+//Make humanChoice paramater case-insensitive
+
 function playRound(humanChoice, computerChoice) {
-    //Make these two parameters arguments
-    //Make humanChoice paramater case-insensitive
     let humanChoice = humanScore;
     let computerChoice = computerScore(value);
     if (humanChoice === "Rock" && computerChoice === "Paper") {
