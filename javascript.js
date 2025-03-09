@@ -36,7 +36,10 @@ let computerScore = getComputerChoice(init=0);
 function playRound(humanChoice, computerChoice) {
     //Make these two parameters arguments
     //Make humanChoice paramater case-insensitive
-    let humanChoice = prompt("Rock, Paper, or Scissors?");
+    let humanChoice = humanScore;
+    let computerChoice = computerScore(value);
+    
+
 }
 
 const humanSelection = getHumanChoice();
