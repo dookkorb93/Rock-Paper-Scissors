@@ -38,8 +38,26 @@ function playRound(humanChoice, computerChoice) {
     //Make humanChoice paramater case-insensitive
     let humanChoice = humanScore;
     let computerChoice = computerScore(value);
-    
+    if (humanChoice === "Rock" && computerChoice === "Paper") {
+            console.log("You lose! Paper beats Rock!"); {
+        if (humanChoice === "Paper" && computerChoice === "Scissors")
+            console.log("You lose! Scissors beats Paper!");
+        else (humanChoice === "Scissors" && computerChoice === "Rock")
+            console.log("You lose! Rock beats Scissors!");
+        }  
+    }
 
+    else if (humanChoice === "Rock" && computerChoice === "Scissors") {
+        console.log("You win! Rock beats Scissors!"); {
+        if (humanChoice === "Paper" && computerChoice === "Rock")
+            console.log("You win! Paper beats Rock!");
+        else (humanChoice === "Scissors" && computerChoice === "Paper")
+            console.log("You win! Scissors beats Paper!");
+        }
+    }
+        
+    else (humanChoice === '' || humanChoice === null)
+        console.log("Please enter a valid value");
 }
 
 const humanSelection = getHumanChoice();
