@@ -6,6 +6,7 @@ function getComputerChoice() {
 
 const string = ["Rock", "Paper", "Scissors"];
 const value = getComputerChoice(string);
+//May need to redefine value const or remove entirely depending on the rest of the code
 
 //Double check the global variables in the global scope are compatible with function below
 
