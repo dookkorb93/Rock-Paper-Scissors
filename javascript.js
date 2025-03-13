@@ -71,3 +71,5 @@ const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
 playRound(humanSelection, computerSelection);
+
+//add playGame for 5 rounds below this comment
