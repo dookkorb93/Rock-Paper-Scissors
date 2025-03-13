@@ -12,7 +12,7 @@ const value = getComputerChoice(string);
 
 function getHumanChoice() {
     const humanPrompt = prompt("Rock, Paper, or Scissors?");
-    switch(humanPrompt.charAt(0).toUpperCase() + string.slice(1).toLowerCase()) {
+    switch(humanPrompt.charAt(0).toUpperCase() + humanPrompt.slice(1).toLowerCase()) {
         case "Rock":
             console.log("Rock");
             break;
@@ -30,7 +30,7 @@ function getHumanChoice() {
     }
     return humanPrompt;
 };
-
+console.log(getHumanChoice);
 let humanScore = getHumanChoice(init=0);
 let computerScore = getComputerChoice(init=0);
 
@@ -38,8 +38,8 @@ let computerScore = getComputerChoice(init=0);
 //Make humanChoice paramater case-insensitive
 
 function playRound(humanChoice, computerChoice) {
-    let humanChoice = humanScore;
-    let computerChoice = computerScore(value);
+    //let humanChoice = humanScore;
+    //let computerChoice = computerScore(value);
     if (humanChoice === "Rock" && computerChoice === "Paper") {
             console.log("You lose! Paper beats Rock!"); {
         if (humanChoice === "Paper" && computerChoice === "Scissors")
