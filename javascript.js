@@ -12,7 +12,7 @@ const value = getComputerChoice(string);
 
 function getHumanChoice() {
     const humanPrompt = prompt("Rock, Paper, or Scissors?");
-    switch(humanPrompt) {
+    switch(humanPrompt.charAt(0).toUpperCase() + string.slice(1).toLowerCase()) {
         case "Rock":
             console.log("Rock");
             break;
