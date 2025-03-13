@@ -62,10 +62,8 @@ function playRound(humanChoice, computerChoice) {
                 console.log("You win! Scissors beats Paper!");
             }
         }
-        
-    } else (humanChoice === '' || humanChoice === null) {
+    } else (humanChoice === '' || humanChoice === null)
         console.log("Please enter a valid value");
-    }
 }
 
 const humanSelection = getHumanChoice();
