@@ -29,7 +29,7 @@ let computerScore = 0;
 
 function playRound(humanChoice, computerChoice) {
     if (humanChoice === computerChoice) {
-                console.log(`It's a tie!`);
+        console.log(`It's a tie!`);
     } else if (
         (humanChoice === "Rock" && computerChoice === "Scissors") ||
         (humanChoice === "Paper" && computerChoice === "Rock") ||
@@ -39,7 +39,7 @@ function playRound(humanChoice, computerChoice) {
         humanScore++;
     } else {
         console.log(`You lose! ${computerChoice} beats ${humanChoice}`);
-        computerChoice++;
+        computerScore++;
     }
 }
 
