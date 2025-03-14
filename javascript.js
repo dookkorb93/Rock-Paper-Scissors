@@ -31,8 +31,8 @@ function getHumanChoice() {
     return humanPrompt;
 };
 
-let humanScore = getHumanChoice(init=0);
-let computerScore = getComputerChoice(init=0);
+let humanScore = 0;
+let computerScore = 0;
 
 //Make below two parameters arguments
 //Make humanChoice paramater case-insensitive
