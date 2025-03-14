@@ -5,8 +5,6 @@ function getComputerChoice() {
     return string[randomIndex];
 };
 
-//Double check the global variables in the global scope are compatible with function below
-
 function getHumanChoice() {
     const humanPrompt = prompt("Rock, Paper, or Scissors?");
     const choice = humanPrompt.charAt(0).toUpperCase() + humanPrompt.slice(1).toLowerCase();
