@@ -27,7 +27,7 @@ function getHumanChoice() {
             break;
 
         default:
-            console.log("Default");
+            console.log("Invalid choice.");
     }
     return humanPrompt;
 };
@@ -75,7 +75,7 @@ playRound(humanSelection, computerSelection);
 
 let playGame = function(playRound) {
     for (let i = 0; i < 5; i++) {
-        playGame = playRound + i;
+
     }
 }
 console.log(playGame);
