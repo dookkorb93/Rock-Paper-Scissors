@@ -1,12 +1,9 @@
 const string = ["Rock", "Paper", "Scissors"];
 
 function getComputerChoice() {
-    const randomString = Math.floor(Math.random() * string.length);
-    return string[randomString];
+    const randomIndex = Math.floor(Math.random() * string.length);
+    return string[randomIndex];
 };
-
-//const value = getComputerChoice(string);
-//May need to redefine value const or remove entirely depending on the rest of the code
 
 //Double check the global variables in the global scope are compatible with function below
 
