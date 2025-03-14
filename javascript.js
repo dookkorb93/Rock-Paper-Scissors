@@ -68,13 +68,15 @@ function playRound(humanChoice, computerChoice) {
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
-playRound(humanSelection, computerSelection);
-
 //add playGame for 5 rounds below this comment
 
-let playGame = function(playRound) {
+function playGame() {
     for (let i = 0; i < 5; i++) {
-
+        const humanSelection = getHumanChoice();
+        const computerSelection = getComputerChoice();
+        console.log(`Round ${i + 1}:`);
+        playRound(humanSelection, computerSelection);
     }
+    console.log(`Final score: Human ${humanScore} - Computer ${computerScore}`);
 }
-console.log(playGame);
+playGame();
