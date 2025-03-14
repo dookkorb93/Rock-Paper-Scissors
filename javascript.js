@@ -62,9 +62,6 @@ function playRound(humanChoice, computerChoice) {
         console.log("Please enter a valid value");
 }
 
-// Add return values for above code and then pass function calls as arguments for different function call (log)
-// Don't forget backticks 
-
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
