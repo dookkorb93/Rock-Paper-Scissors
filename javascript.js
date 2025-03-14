@@ -1,10 +1,11 @@
+const string = ["Rock", "Paper", "Scissors"];
+
 function getComputerChoice() {
     const randomString = Math.floor(Math.random() * string.length);
     const value = string[randomString];
-    return console.log(value);
+    return value;
 };
 
-const string = ["Rock", "Paper", "Scissors"];
 const value = getComputerChoice(string);
 //May need to redefine value const or remove entirely depending on the rest of the code
 
