@@ -1,7 +1,7 @@
 function getComputerChoice() {
     const randomString = Math.floor(Math.random() * string.length);
     const value = string[randomString];
-    return value;
+    return console.log(value);
 };
 
 const string = ["Rock", "Paper", "Scissors"];
@@ -26,7 +26,7 @@ function getHumanChoice() {
             break;
 
         default:
-            console.log("Please enter a valid value");
+            console.log("Default");
     }
     return humanPrompt;
 };
@@ -38,16 +38,14 @@ let computerScore = 0;
 //Make humanChoice paramater case-insensitive
 
 function playRound(humanChoice, computerChoice) {
-    //let humanChoice = humanScore;
-    //let computerChoice = computerScore(value);
     if (humanChoice === "Rock" && computerChoice === "Paper") {
                 console.log("You lose! Paper beats Rock!");
                 computerScore++; {
             if (humanChoice === "Paper" && computerChoice === "Scissors") {
-                return console.log("You lose! Scissors beats Paper!");
+                console.log("You lose! Scissors beats Paper!");
                 computerScore++;
             } else (humanChoice === "Scissors" && computerChoice === "Rock")
-                return console.log("You lose! Rock beats Scissors!");
+                console.log("You lose! Rock beats Scissors!");
                 computerScore++;
         }
     } else if (humanChoice === "Rock" && computerChoice === "Scissors") {
@@ -73,3 +71,10 @@ const computerSelection = getComputerChoice();
 playRound(humanSelection, computerSelection);
 
 //add playGame for 5 rounds below this comment
+
+let playGame = function(playRound) {
+    for (let i = 0; i < 5; i++) {
+        playGame = playRound + i;
+    }
+}
+console.log(playGame);
