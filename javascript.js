@@ -5,7 +5,7 @@ function getComputerChoice() {
     return string[randomString];
 };
 
-const value = getComputerChoice(string);
+//const value = getComputerChoice(string);
 //May need to redefine value const or remove entirely depending on the rest of the code
 
 //Double check the global variables in the global scope are compatible with function below
@@ -38,28 +38,19 @@ let computerScore = 0;
 //Make humanChoice paramater case-insensitive
 
 function playRound(humanChoice, computerChoice) {
-    if (humanChoice === "Rock" && computerChoice === "Paper") {
-                console.log("You lose! Paper beats Rock!");
-                computerScore++; {
-            if (humanChoice === "Paper" && computerChoice === "Scissors") {
-                console.log("You lose! Scissors beats Paper!");
-                computerScore++;
-            } else (humanChoice === "Scissors" && computerChoice === "Rock")
-                console.log("You lose! Rock beats Scissors!");
-                computerScore++;
-        }
-    } else if (humanChoice === "Rock" && computerChoice === "Scissors") {
-                console.log("You win! Rock beats Scissors!");
-                humanScore++; {
-            if (humanChoice === "Paper" && computerChoice === "Rock") {
-                console.log("You win! Paper beats Rock!");
-                humanScore++;
-        } else (humanChoice === "Scissors" && computerChoice === "Paper")
-                console.log("You win! Scissors beats Paper!");
-                humanScore++;
-        }
-    } else (humanChoice === '' || humanChoice === null)
-        console.log("Please enter a valid value");
+    if (humanChoice === computerChoice) {
+                console.log("It's a tie!");
+    } else if (
+        (humanChoice === "Rock" && computerChoice === "Scissors") ||
+        (humanChoice === "Paper" && computerChoice === "Rock") ||
+        (humanChoice === "Scissors" && computerChoice === "Paper")
+    ) {
+        console.log("You win! ${humanChoice} beats ${computerChoice}");
+        humanScore++;
+    } else {
+        console.log("You lose! ${computerChoice} beats ${humanChoice}");
+        computerChoice++;
+    }
 }
 
 const humanSelection = getHumanChoice();
