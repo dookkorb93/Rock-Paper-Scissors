@@ -2,8 +2,7 @@ const string = ["Rock", "Paper", "Scissors"];
 
 function getComputerChoice() {
     const randomString = Math.floor(Math.random() * string.length);
-    const value = string[randomString];
-    return value;
+    return string[randomString];
 };
 
 const value = getComputerChoice(string);
